@@ -1,0 +1,61 @@
+<html>
+  <head>
+
+    <style>
+      
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        transition: all 0.5s ease;
+      }
+
+      .image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 890px;
+        height: 700px;
+      }
+	
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	background-color: black;
+}
+	  
+    </style>
+  </head>
+  <body>
+  
+    <img src="https://i.imgur.com/ld0mjh1.png" id="myImg">
+
+    <div class="overlay" id="myOverlay">
+      <img class="image" id="overlayImage">
+      <p id="imageText"></p>
+    </div>
+
+    <script>
+      const image = document.getElementById("myImg");
+      const overlay = document.getElementById("myOverlay");
+      const overlayImage = document.getElementById("overlayImage");
+      const imageText = document.getElementById("imageText");
+
+      image.onclick = function() {
+        overlay.style.display = "block";
+        overlayImage.src = this.src;
+        imageText.innerHTML = this.alt;
+      };
+
+      overlay.onclick = function() {
+        overlay.style.display = "none";
+      };
+    </script>
+  </body>
+</html>
