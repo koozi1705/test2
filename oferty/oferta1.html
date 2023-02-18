@@ -1,23 +1,28 @@
 <html>
   <head>
-<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="style.css">
   </head>
   <body>
-  
-    <img src="https://i.imgur.com/ld0mjh1.png" id="myImg">
-
     <div class="overlay" id="myOverlay">
       <img class="image" id="overlayImage">
-      <p id="imageText"></p>
     </div>
+    <img src="https://i.imgur.com/ld0mjh1.png" id="myImg1" alt="Image 1">
+    <img src="https://i.imgur.com/ld0mjh1.png" id="myImg2" alt="Image 2">
 
     <script>
-      const image = document.getElementById("myImg");
+      const image1 = document.getElementById("myImg1");
+      const image2 = document.getElementById("myImg2");
       const overlay = document.getElementById("myOverlay");
       const overlayImage = document.getElementById("overlayImage");
       const imageText = document.getElementById("imageText");
 
-      image.onclick = function() {
+      image1.onclick = function() {
+        overlay.style.display = "block";
+        overlayImage.src = this.src;
+        imageText.innerHTML = this.alt;
+      };
+
+      image2.onclick = function() {
         overlay.style.display = "block";
         overlayImage.src = this.src;
         imageText.innerHTML = this.alt;
@@ -29,3 +34,8 @@
     </script>
   </body>
 </html>
+
+
+
+
+
