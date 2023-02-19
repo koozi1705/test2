@@ -1,30 +1,45 @@
 <html>
   <head>
-<link rel="stylesheet" href="style0.css">
+	<link rel="stylesheet" href="style0.css">
+    <style>
+      td {
+        vertical-align: middle;
+      }
+      p {
+        display: block;
+        clear: both;
+      }
+    </style>
   </head>
+ 
   <body>
-  
-<center><img src="img/1.png"></center>
-
-  
-  <div class="navbar">  
-	<a href="Sprzedaz.html">Powrót</a>
-	<a href="wynajem.html">Wynajem</a>
-	<a href="kontakt.html">Kontakt</a>
-	
-	 </div>
-<br>
-
-    <div class="overlay" id="myOverlay">
+	<center><img src="img/1.png"></center>
+    
+	<div class="navbar">  
+      <a href="Sprzedaz.html">Powrót</a>
+      <a href="wynajem.html">Wynajem</a>
+      <a href="kontakt.html">Kontakt</a>
+	</div>
+    
+    <br><br><br><br>
+    
+	<div class="overlay" id="myOverlay">
       <img class="image" id="overlayImage">
     </div>
-
-<table>
- <tr>
-    <td><img src="https://i.imgur.com/ld0mjh1.png" id="myImg1" alt="Image 1" height="400" width="400"></td></tr>
-   <tr><td> <img src="https://i.imgur.com/ld0mjh1.png" id="myImg2" alt="Image 2" height='150' width='150'> </td></td>
-
-    <script>
+    
+	<p>Mieszkanie na sprzedaż po remoncie! Długie Stare!</p> 
+	<p>Mieszkanie na sprzedaż po remoncie! Długie Stare!</p>
+    
+	<table style="float: right;">
+      <tr>
+        <td><img src="https://i.imgur.com/ld0mjh1.png" id="myImg1" alt="Image 1" height="400" width="400"></td>
+      </tr>
+      <tr>
+        <td><img src="https://i.imgur.com/ld0mjh1.png" id="myImg2" alt="Image 2" height='150' width='150'></td>
+      </tr>
+    </table>
+    
+	<script>
       const image1 = document.getElementById("myImg1");
       const image2 = document.getElementById("myImg2");
       const overlay = document.getElementById("myOverlay");
@@ -49,8 +64,3 @@
     </script>
   </body>
 </html>
-
-
-
-
-
