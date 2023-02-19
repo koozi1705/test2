@@ -1,0 +1,56 @@
+<html>
+  <head>
+<link rel="stylesheet" href="style0.css">
+  </head>
+  <body>
+  
+<center><img src="img/1.png"></center>
+
+  
+  <div class="navbar">  
+	<a href="Sprzedaz.html">Powrót</a>
+	<a href="wynajem.html">Wynajem</a>
+	<a href="kontakt.html">Kontakt</a>
+	
+	 </div>
+<br>
+
+    <div class="overlay" id="myOverlay">
+      <img class="image" id="overlayImage">
+    </div>
+
+<table>
+ <tr>
+    <td><img src="https://i.imgur.com/ld0mjh1.png" id="myImg1" alt="Image 1" height="400" width="400"></td></tr>
+   <tr><td> <img src="https://i.imgur.com/ld0mjh1.png" id="myImg2" alt="Image 2" height='150' width='150'> </td></td>
+
+    <script>
+      const image1 = document.getElementById("myImg1");
+      const image2 = document.getElementById("myImg2");
+      const overlay = document.getElementById("myOverlay");
+      const overlayImage = document.getElementById("overlayImage");
+      const imageText = document.getElementById("imageText");
+
+      image1.onclick = function() {
+        overlay.style.display = "block";
+        overlayImage.src = this.src;
+        imageText.innerHTML = this.alt;
+      };
+
+      image2.onclick = function() {
+        overlay.style.display = "block";
+        overlayImage.src = this.src;
+        imageText.innerHTML = this.alt;
+      };
+
+      overlay.onclick = function() {
+        overlay.style.display = "none";
+      };
+    </script>
+  </body>
+</html>
+
+
+
+
+
